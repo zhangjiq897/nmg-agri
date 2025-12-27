@@ -30,6 +30,28 @@
             background-color: #4d7c0f;
             border-radius: 2px;
         }
+		@media (min-width:1080px){
+			.city-nav-container{
+				display: block;
+			}
+			.menu-li{
+				display: block;
+			}
+			#menuBtn{
+				display: none;
+			}
+		}
+		@media (max-width:1080px){
+			.city-nav-container{
+				display: none;
+			}
+			.menu-li{
+				display: none;
+			}
+			#menuBtn{
+				display: block;
+			}
+		}
     </style>
 </head>
 <body class="bg-gray-50 font-sans">
@@ -37,16 +59,16 @@
     <header class="bg-green-700 text-white shadow-md sticky top-0 z-10">
         <div class="container mx-auto px-4 py-3">
             <!-- 主标题（所有页面不变） -->
-            <h1 class="text-xl md:text-2xl font-bold text-center mb-4">内蒙古农贸厅绿色农产品</h1>
+            <h1 class="text-xl lg:text-2xl font-bold text-center mb-4">内蒙古农贸厅绿色农产品</h1>
             
             <!-- 移动端汉堡按钮 -->
-            <button id="menuBtn" class="md:hidden text-2xl mx-auto block mb-2">
+            <button id="menuBtn" class="text-2xl mx-auto block mb-2">
                 <i class="fa fa-bars"></i>
             </button>
             
             <!-- 桌面端横向导航（首页+地市，首页选中） -->
-            <nav class="hidden md:block city-nav-container">
-                <ul class="flex space-x-4 md:space-x-6 whitespace-nowrap justify-center pb-2">
+            <nav class="city-nav-container">
+                <ul class="flex space-x-4 lg:space-x-6 whitespace-nowrap justify-center pb-2">
                     <li><a href="index.html" class="py-2 px-3 bg-green-800 rounded transition-colors">首页</a></li>
                     <li><a href="huhhot.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">呼和浩特市</a></li>
                     <li><a href="baotou.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">包头市</a></li>
@@ -58,7 +80,7 @@
             </nav>
             
             <!-- 桌面端辅助导航（可选） -->
-            <nav class="hidden md:block text-center mt-2">
+            <nav class="menu-li text-center mt-2">
                 <ul class="flex justify-center space-x-6">
                     <li><a href="about.html" class="py-1 px-2 hover:text-green-200">关于我们</a></li>
                     <li><a href="contact.html" class="py-1 px-2 hover:text-green-200">联系方式</a></li>
