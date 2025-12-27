@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内蒙古农贸厅绿色农产品</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<a href="huhhot.html" target="_blank"></a>
+	<a href="baotou.html" target="_blank"></a>
+    <style>
+        /* 移动端菜单过渡 */
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .mobile-menu.active {
+            max-height: 1000px;
+        }
+        /* 地市导航横向滚动（适配小屏） */
+        .city-nav-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .city-nav-container::-webkit-scrollbar {
+            height: 4px;
+        }
+        .city-nav-container::-webkit-scrollbar-thumb {
+            background-color: #4d7c0f;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 头部导航（所有页面完全复用，首页选中“首页”） -->
+    <header class="bg-green-700 text-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <!-- 主标题（所有页面不变） -->
+            <h1 class="text-xl md:text-2xl font-bold text-center mb-4">内蒙古农贸厅绿色农产品</h1>
+            
+            <!-- 移动端汉堡按钮 -->
+            <button id="menuBtn" class="md:hidden text-2xl mx-auto block mb-2">
+                <i class="fa fa-bars"></i>
+            </button>
+            
+            <!-- 桌面端横向导航（首页+地市，首页选中） -->
+            <nav class="hidden md:block city-nav-container">
+                <ul class="flex space-x-4 md:space-x-6 whitespace-nowrap justify-center pb-2">
+                    <li><a href="index.html" class="py-2 px-3 bg-green-800 rounded transition-colors">首页</a></li>
+                    <li><a href="huhhot.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">呼和浩特市</a></li>
+                    <li><a href="baotou.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">包头市</a></li>
+                    <li><a href="chifeng.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">赤峰市</a></li>
+                    <li><a href="tongliao.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">通辽市</a></li>
+                    <li><a href="ordos.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">鄂尔多斯市</a></li>
+                    <li><a href="hulunbuir.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">呼伦贝尔市</a></li>
+                </ul>
+            </nav>
+            
+            <!-- 桌面端辅助导航（可选） -->
+            <nav class="hidden md:block text-center mt-2">
+                <ul class="flex justify-center space-x-6">
+                    <li><a href="about.html" class="py-1 px-2 hover:text-green-200">关于我们</a></li>
+                    <li><a href="contact.html" class="py-1 px-2 hover:text-green-200">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- 移动端导航菜单（首页+地市，首页选中） -->
+        <nav id="mobileMenu" class="mobile-menu md:hidden bg-green-800">
+            <ul class="container mx-auto px-4 py-2">
+                <li class="py-2 border-b border-green-700">
+                    <h3 class="font-medium mb-2">导航菜单</h3>
+                    <ul class="space-y-1">
+                        <li><a href="index.html" class="block py-1 px-2 bg-green-700 rounded">首页</a></li>
+                        <li><a href="huhhot.html" class="block py-1 px-2 hover:bg-green-700 rounded">呼和浩特市</a></li>
+                        <li><a href="baotou.html" class="block py-1 px-2 hover:bg-green-700 rounded">包头市</a></li>
+                        <li><a href="chifeng.html" class="block py-1 px-2 hover:bg-green-700 rounded">赤峰市</a></li>
+                        <li><a href="tongliao.html" class="block py-1 px-2 hover:bg-green-700 rounded">通辽市</a></li>
+                        <li><a href="ordos.html" class="block py-1 px-2 hover:bg-green-700 rounded">鄂尔多斯市</a></li>
+                        <li><a href="hulunbuir.html" class="block py-1 px-2 hover:bg-green-700 rounded">呼伦贝尔市</a></li>
+                    </ul>
+                </li>
+                <li class="py-2 border-b border-green-700"><a href="about.html" class="block hover:text-green-200">关于我们</a></li>
+                <li class="py-2"><a href="contact.html" class="block hover:text-green-200">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首页核心内容：内蒙古自治区农牧厅介绍 -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-green-800 mb-4 text-center">内蒙古自治区农牧厅介绍</h2>
+            <div class="text-gray-700 leading-relaxed space-y-4">
+                <p>内蒙古自治区农牧厅是自治区人民政府组成部门，负责统筹推进全区农牧业高质量发展，牵头实施乡村振兴战略，保障农产品有效供给和质量安全，推动农牧业产业化、现代化建设。</p>
+                <p>农牧厅核心职责包括：拟订农牧业农村牧区发展政策和规划，指导农牧业生产经营，推进农牧业科技进步和技术推广，监管农产品质量安全，保护农牧业资源环境，促进农牧民增收致富，推动全区绿色农产品品牌建设与推广。</p>
+                <p>本次绿色农产品展览是农牧厅推动全区特色农产品走向市场的重要举措，旨在展示各地市优质绿色农产品，提升内蒙古农产品品牌影响力，助力乡村振兴和农牧区经济发展。</p>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <p class="text-green-700 font-medium">点击上方导航栏地市名称，查看各地市特色绿色农产品详情</p>
+        </section>
+    </main>
+
+    <!-- 页脚（所有页面一致） -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 内蒙古农贸厅绿色农产品展览 | 所有权利保留</p>
+            <p class="mt-2 text-sm">本页面适配移动端访问，建议使用最新版浏览器打开</p>
+        </div>
+    </footer>
+
+    <!-- 移动端菜单交互 -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内蒙古农贸厅绿色农产品 - 包头市</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .mobile-menu.active {
+            max-height: 1000px;
+        }
+        .city-nav {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .city-nav::-webkit-scrollbar {
+            height: 4px;
+        }
+        .city-nav::-webkit-scrollbar-thumb {
+            background-color: #4d7c0f;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-green-700 text-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <h1 class="text-xl md:text-2xl font-bold text-center mb-4">内蒙古农贸厅绿色农产品</h1>
+            
+            <button id="menuBtn" class="md:hidden text-2xl mx-auto block mb-2">
+                <i class="fa fa-bars"></i>
+            </button>
+            
+            <nav class="hidden md:block city-nav">
+                <ul class="flex space-x-4 md:space-x-6 whitespace-nowrap justify-center pb-2">
+                    <li><a href="index.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">首页</a></li>
+                    <li><a href="huhhot.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">呼和浩特市</a></li>
+                    <li><a href="baotou.html" class="py-2 px-3 bg-green-800 rounded transition-colors">包头市</a></li>
+                    <li><a href="chifeng.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">赤峰市</a></li>
+                    <li><a href="tongliao.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">通辽市</a></li>
+                    <li><a href="ordos.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">鄂尔多斯市</a></li>
+                    <li><a href="hulunbuir.html" class="py-2 px-3 hover:bg-green-800 rounded transition-colors">呼伦贝尔市</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <nav id="mobileMenu" class="mobile-menu md:hidden bg-green-800">
+            <ul class="container mx-auto px-4 py-2">
+                <li class="py-2 border-b border-green-700">
+                    <h3 class="font-medium mb-2">导航菜单</h3>
+                    <ul class="space-y-1">
+                        <li><a href="index.html" class="block py-1 px-2 hover:bg-green-700 rounded">首页</a></li>
+                        <li><a href="huhhot.html" class="block py-1 px-2 hover:bg-green-700 rounded">呼和浩特市</a></li>
+                        <li><a href="baotou.html" class="block py-1 px-2 bg-green-700 rounded">包头市</a></li>
+                        <li><a href="chifeng.html" class="block py-1 px-2 hover:bg-green-700 rounded">赤峰市</a></li>
+                        <li><a href="tongliao.html" class="block py-1 px-2 hover:bg-green-700 rounded">通辽市</a></li>
+                        <li><a href="ordos.html" class="block py-1 px-2 hover:bg-green-700 rounded">鄂尔多斯市</a></li>
+                        <li><a href="hulunbuir.html" class="block py-1 px-2 hover:bg-green-700 rounded">呼伦贝尔市</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="text-center mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-green-800 mb-4">包头市绿色农产品</h2>
+        </section>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 农产品1：固阳土豆 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <img src="https://picsum.photos/seed/baotou1/400/300" alt="固阳土豆" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">固阳土豆</h4>
+                    <p class="text-gray-600 mb-3">国家地理标志产品，淀粉含量高，口感绵密沙糯，蒸煮煎炸皆佳，是北方餐桌必备。</p>
+                    <a href="#" class="text-green-700 hover:text-green-900 font-medium">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+            <!-- 农产品2：达茂旗牛羊肉 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <img src="https://picsum.photos/seed/baotou2/400/300" alt="达茂旗牛羊肉" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">达茂旗牛羊肉</h4>
+                    <p class="text-gray-600 mb-3">草原散养，肉质鲜嫩无膻味，高蛋白低脂肪，是内蒙古牛羊肉的优质代表。</p>
+                    <a href="#" class="text-green-700 hover:text-green-900 font-medium">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+            <!-- 农产品3：黄河鲤鱼 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <img src="https://picsum.photos/seed/baotou3/400/300" alt="黄河鲤鱼" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">黄河鲤鱼</h4>
+                    <p class="text-gray-600 mb-3">包头段黄河水域养殖，肉质细嫩刺少，鲜味浓郁，富含不饱和脂肪酸。</p>
+                    <a href="#" class="text-green-700 hover:text-green-900 font-medium">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-green-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 内蒙古农贸厅绿色农产品展览 | 版权所有</p>
+            <p class="mt-2 text-sm">适配移动端访问 | 建议使用最新版浏览器</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>
